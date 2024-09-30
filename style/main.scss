@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 800px;
+  margin: 1rem auto;
+  display: block;
+  padding: 1rem;
+  header {
+    img {
+      height: 30px;
+      display: block;
+      margin: 1rem auto 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: lighter;
+      text-align: center;
+      span {
+        font-weight: bold;
+      }
+    }
+    p {
+      font-size: 1.25rem;
+      text-align: center;
+      margin-block: 1rem 2rem;
+    }
+  }
+  main {
+    img {
+      width: 90%;
+      display: block;
+      margin: 1rem auto;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 5rem;
+      input {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        border-radius: 0.5rem;
+        font-size: 1.5rem;
+        &[type="email"] {
+          padding: 0.25rem 1rem;
+          border: hsl(223, 100%, 88%) 2px solid;
+          outline: none;
+          color: hsl(223, 100%, 88%);
+          &::placeholder {
+            color: hsl(223, 100%, 88%);
+          }
+        }
+        &[type="submit"] {
+          margin: 1rem auto;
+          border: none;
+          color: #fff;
+          background: rgb(79, 125, 243, 0.75);
+          cursor: pointer;
+          padding: 0.5rem 1rem;
+          transition: all 500ms;
+          &:hover {
+            background: rgb(79, 125, 243);
+          }
+        }
+      }
+      p {
+        text-align: center;
+        font-weight: bold;
+        color: red;
+        &.dontshow {
+          display: none;
+        }
+      }
+    }
+  }
+
+  footer {
+    div {
+      width: fit-content;
+      display: block;
+      margin: 0 auto 1rem;
+      svg {
+        height: 35px;
+        aspect-ratio: 1/1;
+        fill: hsl(223, 87%, 63%);
+        padding: 0.25rem;
+        border: hsl(223, 100%, 88%) 2px solid;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 500ms all;
+        &:hover {
+          background: hsl(223, 100%, 88%);
+        }
+
+        & + svg {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+    p {
+      text-align: center;
+      opacity: 0.5;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
